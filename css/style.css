@@ -1,17 +1,84 @@
-html {
-	box-sizing: border-box;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+.content {
+	text-align: center;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.navigation {
+	float:right;
+	font-size: 1.04rem;
+	list-style: none;
+	margin-bottom: 6rem;
+	width: 100%;
+}
+
+.navigation .content {
+	height: 4.375rem;
+	width: 46rem;
+	margin: 0 auto;
+	padding: 0 0.938rem;	
 }
 
 .navigation .content .links {
 	float: right;
+	margin-top: 1.5em;
 }
 
 .navigation .content .links li {
-	list-style: none;
 	display: inline-block;
+	margin-left: 1.563rem;
 }
 
 a {
 	text-decoration: none;
+	padding-right: 1em;
+	color: #2F4F4F;
+	font-weight: bold;
 }
 
+.introduction {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.introduction .content h1 {
+	padding-top: 1.5rem;
+	font-size: 3rem;
+	color: #2F4F4F;
+	font-family: 'Merienda', cursive;
+}
+
+.introduction .content h3 {
+	padding-top: 1.5rem;
+	font-size: 1.5rem;
+	color: #708090;
+}
+
+.projects .content {
+	padding-top: 1.5rem;
+}
+
+img {
+	max-width: 500px
+}
