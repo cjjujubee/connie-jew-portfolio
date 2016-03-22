@@ -22,7 +22,7 @@ time, mark, audio, video {
 
 .content {
 	text-align: center;
-	font-family: 'Pathway Gothic One', sans-serif;
+	font-family: 'Slabo 27px', serif;
 }
 
 .navigation {
@@ -31,6 +31,8 @@ time, mark, audio, video {
 	list-style: none;
 	margin-bottom: 6rem;
 	width: 100%;
+	position: fixed;
+	background-color: #2F4F4F;
 }
 
 .navigation .content {
@@ -53,7 +55,7 @@ time, mark, audio, video {
 a {
 	text-decoration: none;
 	padding-right: 1em;
-	color: #2F4F4F;
+	color: white;
 	font-weight: bold;
 }
 
@@ -63,22 +65,92 @@ a {
 }
 
 .introduction .content h1 {
-	padding-top: 1.5rem;
-	font-size: 3rem;
+	padding-top: 6rem;
+	font-size: 3.5rem;
 	color: #2F4F4F;
-	font-family: 'Merienda', cursive;
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+}
+
+.introduction .content h2 {
+	padding-top: 1.25rem;
+	font-size: 1.5rem;
+	color: #2F4F4F;
 }
 
 .introduction .content h3 {
-	padding-top: 1.5rem;
-	font-size: 1.5rem;
+	padding-top: 1.25rem;
+	font-size: 1.25rem;
 	color: #708090;
+}
+
+.projects {
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 
 .projects .content {
 	padding-top: 1.5rem;
 }
 
+.projects .content h1 {
+	font-size: 2rem;
+	text-align: left;
+	padding-top: 3rem;
+	color: black;
+}
+
+.projects .content h3 {
+	font-size: 1rem;
+	padding-top: 1rem;
+}
+
+.projects .content p {
+	padding-top: 2rem;
+	color: #808080;
+	font-weight: bold;
+}
+
 img {
-	max-width: 500px
+	max-width: 500px;
+	display: block;
+	border: 2px solid #2F4F4F;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content-footer {
+  margin-top: 5em;
+  background-color: #00796B;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.content-footer .social {
+  word-spacing: 0.5em;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.social > li {
+  display: inline-block;
+  font-family: 'Slabo 27px', serif;
+}
+
+@media only screen and (max-width: 500px) {
+    .navigation {
+        padding: 3em 0;
+    }
+    .navigation-content {
+        font-size: 3em;
+    }
+    .introduction {
+        margin: 3em;
+    }
+    .projects {
+        margin: 3em;
+    }
+    .content-footer {
+        margin: 3em;
+  }
 }

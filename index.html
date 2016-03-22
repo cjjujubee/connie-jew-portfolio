@@ -5,39 +5,53 @@
 	<title>Document </title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 	<nav class="navigation">
 		<div class="content">
 			<ul class="links">
-				<li><a href="">About Me</a></li>
-				<li><a href="">Projects</a></li>
-				<li><a href="">Contact</a></li>
+				<li><a href="#connie">About Me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contactinfo">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
 	<section class="introduction">
 		<div class="content">
-			<h1>Connie Jew</h1>
-			<h1>Front-End Web Developer</h1>
+			<h1 id="connie">Connie Jew</h1>
+			<h2>Front-End Web Developer</h2>
 			<h3>Hi there! I'm Connie Jew, a developer-in-training based in San Francisco, California.</h3>
 		</div>
 	</section>
-	<section class="projects">
+	<section id="projects" class="projects">
 		<div class="content">
 			<h1>Projects</h1>
 			<h3>Here are some projects that I've worked on recently</h3>
-			<p>CodePen About Me Page <br> <a href="http://codepen.io/cjew/pen/qZaVPE">
-				<img src="images/CodePenAboutMe.png" alt="About Me">
+			<p>CodePen About Me Page<br/> 
+	<a href="#top">Go to top</a>			<a href="http://codepen.io/cjew/pen/qZaVPE">
+					<img src="images/CodePenAboutMe.png" alt="About Me"/>
+				</a>
 			</p>
-			<p>Hacking the New York Times <br> <a href="http://codepen.io/cjew/full/qZaVPE/">
-				<img src="images/HackNYT.png" alt="Hacking the NYT">
+			<p>Hacking the New York Times<br/><br/>
+				<img src="images/HackNYT.png" alt="Hacking the NYT"/>
 			</p>
-			<p>Building a Landing Page from Scratch <br> <a href="https://github.com/cjjujubee/startup-landing-page-clone">
-				<img src="images/Karma.png" alt="Karma Landing Page">
+			<p>Building a Landing Page from Scratch<br/>
+				<a href="https://github.com/cjjujubee/startup-landing-page-clone">
+					<img src="images/Karma.png" alt="Karma Landing Page"/>
+				</a>
 			</p>
 		</section>
+
+		<footer class="content-footer">
+			<p id="contactinfo" class="content">Where to find me:</p>
+				<ul class="social">
+					<li><a href="https://plus.google.com/+ConnieJew">Google+</a></li>
+					<li><a href="github.com/cjjujubee">Github</a></li>
+					<li><a href="mailto:connie.jew@gmail.com?Subject=Hello" target="_top">Email</a>
+					</li>
+				</ul>
+		</footer>
 	</body>
