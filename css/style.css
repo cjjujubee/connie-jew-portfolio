@@ -20,11 +20,60 @@ time, mark, audio, video {
     box-sizing: border-box;
 }
 
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*addition of grids for project sidebar*/
+[class*='col-'] {
+  float: left;
+}
+
+[class*='col-'] {
+  padding-right: 20px;
+  border: 3px solid white;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+.grid {
+	width: 100%;
+}
+
+.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*left column*/
+.col-3-10 {
+	width: 30%;
+}
+
+/*right column*/
+.col-7-10 {
+	width: 70%;
+}
+
 .content {
 	text-align: center;
 	font-family: 'Slabo 27px', serif;
 }
 
+/*navigation bar*/
 .navigation {
 	float:right;
 	font-size: 1.04rem;
@@ -52,6 +101,7 @@ time, mark, audio, video {
 	margin-left: 1.563rem;
 }
 
+/*navigation links*/
 a {
 	text-decoration: none;
 	padding-right: 1em;
@@ -59,6 +109,7 @@ a {
 	font-weight: bold;
 }
 
+/*name and overview*/
 .introduction {
 	margin-left: 2rem;
 	margin-right: 2rem;
@@ -69,13 +120,12 @@ a {
 	font-size: 3.5rem;
 	color: #2F4F4F;
 	font-family: 'Playfair Display', serif;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 .introduction .content h2 {
 	padding-top: 1.25rem;
 	font-size: 1.5rem;
-	color: #2F4F4F;
 }
 
 .introduction .content h3 {
@@ -84,31 +134,56 @@ a {
 	color: #708090;
 }
 
-.projects {
+/*.projects {
 	margin-left: 2rem;
 	margin-right: 2rem;
+}*/
+
+/*increases length of sidebar downwards*/
+.grid .myprojects {
+	padding-bottom: 1rem;
+	border: solid 2px #2F4F4F;
 }
 
+/*affects sidebar links*/
+.grid .myprojects li {
+	padding-top: .5rem;
+	padding-bottom: 1rem;
+	list-style: none;
+	padding-left: .5rem;
+	font-family: 'Slabo 27px', serif;
+}
+
+.grid .myprojects a {
+	color: #2F4F4F;
+}
+
+.grid .projectsidebar h3 {
+	padding-top: 1.5rem;
+	font-family: 'Slabo 27px', serif;
+}
+
+/*projects with screenshots*/
 .projects .content {
 	padding-top: 1.5rem;
 }
 
-.projects .content h1 {
-	font-size: 2rem;
-	text-align: left;
-	padding-top: 3rem;
-	color: black;
-}
-
 .projects .content h3 {
 	font-size: 1rem;
-	padding-top: 1rem;
 }
 
 .projects .content p {
-	padding-top: 2rem;
+	padding-bottom: 1rem;
 	color: #808080;
-	font-weight: bold;
+}
+
+.projectsidebar p {
+	padding-top: .5rem;
+}
+
+.projectsidebar h3 {
+	padding-bottom: .5em;
+	text-align: center;
 }
 
 img {
@@ -119,6 +194,7 @@ img {
 	margin-right: auto;
 }
 
+/*social information*/
 .content-footer {
   margin-top: 5em;
   background-color: #00796B;
@@ -137,6 +213,7 @@ img {
   font-family: 'Slabo 27px', serif;
 }
 
+/*addition of responsiveness*/
 @media only screen and (max-width: 500px) {
     .navigation {
         padding: 3em 0;
