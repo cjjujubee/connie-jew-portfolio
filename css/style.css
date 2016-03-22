@@ -1,5 +1,17 @@
 html {
 	box-sizing: border-box;
-	font-family: "Roboto", sans-serif;
+}
+
+.navigation .content .links {
+	float: right;
+}
+
+.navigation .content .links li {
+	list-style: none;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
 }
 
