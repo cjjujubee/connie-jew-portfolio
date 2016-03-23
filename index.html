@@ -10,6 +10,12 @@
 </head>
 
 <body>
+	<!-- body border -->
+	<div id="left"></div>
+	<div id="right"></div>
+	<div id="top"></div>
+	<div id="bottom"></div>
+	
 	<nav class="navigation">
 		<div class="content">
 			<ul class="links">
@@ -24,7 +30,7 @@
 			<h1 id="connie">Connie Jew</h1>
 			<h2>Front-End Web Developer</h2>
 			<h3>Hi there! I'm Connie Jew, a developer-in-training based in San Francisco, California.</h3>
-			<h2>Projects</h2>
+			<h2 id="projects" class="project-header">Projects</h2>
 		</div>
 	</section>
 	<div class="grid grid-pad">
@@ -32,24 +38,24 @@
 			<h3>Projects I've worked on recently</h3>
 			<ul class="myprojects">
 				<li><a href="#aboutme">CodePen About Me Page</a></li>
-				<li><a href="#hackingNYT">Hacking the New York Times</a></li>
-				<li><a href="#Karma">Building a Landing Page from Scratch</a></li>
+			 	<li><a href="#Karma">Building a Landing Page from Scratch</a></li>
+			 	<li><a href="#hackingNYT">Hacking the New York Times</a></li>
 			</ul>
 		</div><!-- 
-		 --><section id="projects" class="projects col-7-10">
+		 --><section class="projects col-7-10">
 				<div class="content">
-					<p id="aboutme">CodePen About Me Page<br/> 
-						<a href="http://codepen.io/cjew/pen/qZaVPE">
+					<p id="aboutme" class="jumptarget">CodePen About Me Page
+						<a href="http://codepen.io/cjew/pen/ZWpxem">
 							<img src="images/CodePenAboutMe.png" alt="About Me"/>
 						</a>
 					</p>
-					<p id="hackingNYT">Hacking the New York Times<br/><br/>
-						<img src="images/HackNYT.png" alt="Hacking the NYT"/>
-					</p>
-					<p id="Karma">Building a Landing Page from Scratch<br/>
+					<p id="Karma" class="jumptarget">Building a Landing Page from Scratch
 						<a href="https://github.com/cjjujubee/startup-landing-page-clone">
 						<img src="images/Karma.png" alt="Karma Landing Page"/>
 						</a>
+					</p>
+					<p id="hackingNYT" class="jumptarget">Hacking the New York Times
+						<img src="images/HackNYT.png" alt="Hacking the NYT"/>
 					</p>
 				</div>
 			</section>

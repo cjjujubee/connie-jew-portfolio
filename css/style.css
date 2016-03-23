@@ -11,33 +11,45 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
 }
 
 *, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+/*body border styling*/
+#top, #bottom, #left, #right {
+	background: #B2DFDB;
+	position: fixed;
+}
+#left, #right {
+	top: 0; bottom: 0;
+	width: 15px;
+}
+#left { left: 0; }
+#right { right: 0; }
+
+#top, #bottom {
+	left: 0; right: 0;
+	height: 15px;
+}
+#top { top: 0; }
+#bottom { bottom: 0; }
 
 /*addition of grids for project sidebar*/
 [class*='col-'] {
-  float: left;
-}
-
-[class*='col-'] {
-  padding-right: 20px;
-  border: 3px solid white;
-}
-
-[class*='col-']:last-of-type {
-  padding-right: 0;
+	float: left;
+	padding-right: 20px;
+	border: 3px solid white;
 }
 
 .grid {
@@ -45,17 +57,17 @@ time, mark, audio, video {
 }
 
 .grid-pad {
-  padding: 20px 0 20px 20px;
+	padding: 20px 0 20px 20px;
 }
 
 .grid-pad > [class*='col-']:last-of-type {
-  padding-right: 20px;
+	padding-right: 20px;
 }
 
 .grid:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /*left column*/
@@ -86,7 +98,6 @@ time, mark, audio, video {
 
 .navigation .content {
 	height: 4.375rem;
-	width: 46rem;
 	margin: 0 auto;
 	padding: 0 0.938rem;	
 }
@@ -111,8 +122,8 @@ a {
 
 /*name and overview*/
 .introduction {
-	margin-left: 2rem;
-	margin-right: 2rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
 }
 
 .introduction .content h1 {
@@ -130,18 +141,21 @@ a {
 
 .introduction .content h3 {
 	padding-top: 1.25rem;
+	padding-bottom: 3rem;
 	font-size: 1.25rem;
 	color: #708090;
+	border-bottom: solid 1px #2F4F4F;
 }
 
-/*.projects {
-	margin-left: 2rem;
-	margin-right: 2rem;
-}*/
+.introduction .content .project-header {
+	text-align: left;
+	font-size: 2rem;
+	font-weight: bold;
+}
 
 /*increases length of sidebar downwards*/
 .grid .myprojects {
-	padding-bottom: 1rem;
+	margin-top: .4rem;
 	border: solid 2px #2F4F4F;
 }
 
@@ -159,22 +173,29 @@ a {
 }
 
 .grid .projectsidebar h3 {
-	padding-top: 1.5rem;
+	padding-top: 0 auto;
 	font-family: 'Slabo 27px', serif;
+	padding-bottom: 0;
 }
 
 /*projects with screenshots*/
-.projects .content {
-	padding-top: 1.5rem;
-}
 
 .projects .content h3 {
 	font-size: 1rem;
 }
 
+.projects .content .jumptarget::before {
+	content:"";
+	display:block;
+	height:4.375rem; /* fixed header height*/
+	margin:-4.375rem 0 0; /* negative fixed header height */
+}
+
 .projects .content p {
 	padding-bottom: 1rem;
 	color: #808080;
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
 }
 
 .projectsidebar p {
@@ -182,12 +203,12 @@ a {
 }
 
 .projectsidebar h3 {
-	padding-bottom: .5em;
+	padding-bottom: 1.2rem;
 	text-align: center;
 }
 
 img {
-	max-width: 500px;
+	max-width: 494px;
 	display: block;
 	border: 2px solid #2F4F4F;
 	margin-left: auto;
@@ -196,38 +217,67 @@ img {
 
 /*social information*/
 .content-footer {
-  margin-top: 5em;
-  background-color: #00796B;
-  padding-top: 3em;
-  padding-bottom: 3em;
+	margin-top: 5em;
+	background-color: #00796B;
+	padding-top: 3em;
+	padding-bottom: 3em;
 }
 
 .content-footer .social {
-  word-spacing: 0.5em;
-  text-align: center;
-  padding-top: 1rem;
+	word-spacing: 0.5em;
+	text-align: center;
+	padding-top: 1rem;
 }
 
 .social > li {
-  display: inline-block;
-  font-family: 'Slabo 27px', serif;
+	display: inline-block;
+	font-family: 'Slabo 27px', serif;
 }
 
 /*addition of responsiveness*/
 @media only screen and (max-width: 500px) {
-    .navigation {
-        padding: 3em 0;
-    }
-    .navigation-content {
-        font-size: 3em;
-    }
-    .introduction {
-        margin: 3em;
-    }
-    .projects {
-        margin: 3em;
-    }
-    .content-footer {
-        margin: 3em;
-  }
+	.navigation .content {
+		padding: 1rem 0;
+		font-size: 1rem;
+		padding: 0 0.938rem;
+	}
+	.navigation .content .links {
+		margin-top: 1.5em;
+	}
+
+	.myprojects li {
+		text-align: center;
+	}
+
+	img {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	/*grid stuff*/
+	.grid-pad {
+		padding: 0 0 0 0;
+	}
+	.grid-pad > [class*='col-']:last-of-type {
+		padding-right: 0;
+	}
+	.col-3-10 {
+		width: 100%;
+	}
+	.col-7-10 {
+		width: 100%;
+	}
+}
+
+/*border will not display on small screens*/
+@media 
+
+/*Fairly small screens including iphones*/
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+
+{
+	#top, #bottom, #left, #right { display: none; }
 }
