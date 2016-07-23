@@ -1,0 +1,164 @@
+body {
+  padding-top: 35px;
+  font-family: 'Roboto', sans-serif;
+  /*background-color: #c5cce5;*/
+}
+
+/*body border styling*/
+#top, #bottom, #left, #right {
+	background: #B2DFDB;
+	position: fixed;
+}
+#left, #right {
+	top: 0; bottom: 0;
+	width: 15px;
+}
+#left { left: 0; }
+#right { right: 0; }
+
+#top, #bottom {
+	left: 0; right: 0;
+	height: 15px;
+}
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+/* nav bar */
+
+.navbar-default {
+  background-color:#2f4f4f;
+  background-image: none;
+  background-repeat: no-repeat;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #7fc79e;
+}
+
+/* page header */
+.top {
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  height: 75vmin;
+  width: 75vmin;
+  margin: 10vh auto 8vh;
+  border-radius: 37.5vmin;
+  background-color: #F5D04C;
+  margin-bottom: 100px;
+}
+
+.header h1 {
+  font-size: 12vmin;
+  font-family: 'Playfair Display', serif;
+  font-style: bold;
+  display: block;
+  padding-top: 38%;
+  color: #fff;
+}
+
+.header h3 {
+  font-size: 4vmin;
+}
+
+.about-me, .projects {
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+/* about me content */
+
+.about-me {
+  padding-bottom: 50px;
+}
+
+.about-title, .project-title {
+  padding-bottom: 40px;
+}
+
+/* project content */
+
+.project-title, .about-title {
+  text-align: center;
+}
+
+.projects p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+img {
+	max-width: 450px;
+	display: block;
+	border: 2px solid #2F4F4F;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*social information*/
+.content-footer {
+	margin-top: 5em;
+	background-color: #00796B;
+	padding-top: 3em;
+	padding-bottom: 3em;
+  text-align: center;
+  color: white;
+}
+
+.social {
+  padding-left: 0;
+}
+
+.content-footer .social {
+	word-spacing: 0.5em;
+	padding-top: 1rem;
+}
+
+.social > li {
+	display: inline-block;
+  color: white;
+}
+
+.social > li > a {
+  padding: 0;
+  color: white;
+}
+
+/* responsiveness */
+
+/*addition of responsiveness*/
+@media only screen and (max-width: 500px) {
+	.nav-bar, .about-me, .projects {
+		padding: 10rem 0;
+		font-size: 1rem;
+		padding: 0 0.938rem;
+	}
+	.nav-bar .container-fluid .navbar-nav {
+		margin-top: 1.5em;
+	}
+
+	img {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/*border will not display on small screens*/
+@media
+
+/*Fairly small screens including iphones*/
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+
+{
+	#top, #bottom, #left, #right { display: none; }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "connie-jew-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjjujubee/connie-jew-portfolio.git"
+  },
+  "author": "Connie Jew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjjujubee/connie-jew-portfolio/issues"
+  },
+  "homepage": "https://github.com/cjjujubee/connie-jew-portfolio#readme"
+}
